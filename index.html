@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b090c">
+    <meta name="description" content="Индивидуальные занятия по гитаре — с пониманием музыки и вниманием к твоему звучанию.">
+    <title>Индивидуальные занятия по гитаре</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header hero__header">
+      <div class="site-header__inner container">
+          <a class="brand" href="#home" aria-label="Перейти к главной">
+            <img class="brand__logo" src="images/logo/denny-marron-logo.png" alt="Denny Marron">
+          </a>
+
+          <nav class="desktop-nav" aria-label="Основная навигация">
+            <a href="#method" aria-label="Перейти к методике">ПРОГРАММА</a>
+            <a href="#lessons" aria-label="Перейти к занятиям">ЗАНЯТИЯ</a>
+            <a href="#pricing" aria-label="Перейти к стоимости">СТОИМОСТЬ</a>
+            <a href="#about" aria-label="Перейти к разделу обо мне">ОБО МНЕ</a>
+            <a href="#gallery" aria-label="Перейти к галерее">ГАЛЕРЕЯ</a>
+            <a href="#contacts" aria-label="Перейти к контактам">КОНТАКТЫ</a>
+            <div class="social-links" aria-label="Социальные сети">
+              <a href="https://vk.ru/im/convo/148013271" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h3.2c.3 3.7 1.8 6.2 3.1 6.2.5 0 .6-.5.6-1.7V6.5h3v3.7c0 .9.1 1.2.5 1.2.7 0 2.1-1.9 2.8-4.9h3.2c-.6 3.1-3 5.4-3 5.4s2.8 2 3.5 5.6h-3.6c-.8-2.4-2.1-4.1-3-4.1-.5 0-.5.6-.5 1.5v2.6h-.9c-4.7 0-8.3-3.2-8.9-11Z"/></svg></a>
+              <a href="https://web.max.ru/215952486" target="_blank" rel="noopener noreferrer" aria-label="MAX"><img class="social-links__icon social-links__icon--max" src="images/icons/max.svg" alt=""></a>
+              <a href="https://t.me/+79064182235" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.7 3.3 2.8 10.6c-1.3.5-1.3 1.3-.2 1.7l4.8 1.5 1.9 5.7c.2.6.1.9.8.9.5 0 .8-.2 1-.4l2.7-2.6 5.6 4.1c1 .6 1.7.3 2-.9l3.4-16c.4-1.4-.5-2-1.5-1.6Z"/></svg></a>
+              <a class="social-links__instagram" href="https://www.instagram.com/denny.marron" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span>INSTAGRAM</span></a>
+            </div>
+          </nav>
+
+          <div class="mobile-nav">
+            <button class="mobile-nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+            <nav class="mobile-nav__panel" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+              <a href="#method" aria-label="Перейти к методике">ПРОГРАММА</a>
+              <a href="#lessons" aria-label="Перейти к занятиям">ЗАНЯТИЯ</a>
+              <a href="#pricing" aria-label="Перейти к стоимости">СТОИМОСТЬ</a>
+              <a href="#about" aria-label="Перейти к разделу обо мне">ОБО МНЕ</a>
+              <a href="#gallery" aria-label="Перейти к галерее">ГАЛЕРЕЯ</a>
+              <a href="#contacts" aria-label="Перейти к контактам">КОНТАКТЫ</a>
+              <div class="social-links" aria-label="Социальные сети">
+                <a href="https://vk.ru/im/convo/148013271" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h3.2c.3 3.7 1.8 6.2 3.1 6.2.5 0 .6-.5.6-1.7V6.5h3v3.7c0 .9.1 1.2.5 1.2.7 0 2.1-1.9 2.8-4.9h3.2c-.6 3.1-3 5.4-3 5.4s2.8 2 3.5 5.6h-3.6c-.8-2.4-2.1-4.1-3-4.1-.5 0-.5.6-.5 1.5v2.6h-.9c-4.7 0-8.3-3.2-8.9-11Z"/></svg></a>
+                <a href="https://web.max.ru/215952486" target="_blank" rel="noopener noreferrer" aria-label="MAX"><img class="social-links__icon social-links__icon--max" src="images/icons/max.svg" alt=""></a>
+                <a href="https://t.me/+79064182235" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.7 3.3 2.8 10.6c-1.3.5-1.3 1.3-.2 1.7l4.8 1.5 1.9 5.7c.2.6.1.9.8.9.5 0 .8-.2 1-.4l2.7-2.6 5.6 4.1c1 .6 1.7.3 2-.9l3.4-16c.4-1.4-.5-2-1.5-1.6Z"/></svg></a>
+                <a class="social-links__instagram" href="https://www.instagram.com/denny.marron" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span>INSTAGRAM</span></a>
+              </div>
+            </nav>
+          </div>
+      </div>
+    </header>
+
+    <nav class="section-nav is-dark" aria-label="Навигация по разделам">
+      <a class="is-active" href="#home" aria-label="Перейти к главной" aria-current="location"><i aria-hidden="true"></i><span>01</span></a>
+      <a href="#method" aria-label="Перейти к методике"><i aria-hidden="true"></i><span>02</span></a>
+      <a href="#lessons" aria-label="Перейти к занятиям"><i aria-hidden="true"></i><span>03</span></a>
+      <a href="#pricing" aria-label="Перейти к стоимости"><i aria-hidden="true"></i><span>04</span></a>
+      <a href="#about" aria-label="Перейти к разделу обо мне"><i aria-hidden="true"></i><span>05</span></a>
+      <a href="#atmosphere" aria-label="Перейти к атмосфере занятий"><i aria-hidden="true"></i><span>06</span></a>
+      <a href="#gallery" aria-label="Перейти к галерее"><i aria-hidden="true"></i><span>07</span></a>
+      <a href="#contacts" aria-label="Перейти к контактам"><i aria-hidden="true"></i><span>08</span></a>
+    </nav>
+
+    <main>
+      <section class="hero" id="home" data-nav-theme="dark" aria-labelledby="hero-title">
+        <div class="hero__art" role="img" aria-label="Гриф акустической гитары в тёплом вечернем свете"></div>
+        <div class="hero-haze" aria-hidden="true"></div>
+        <div class="hero__ambient" aria-hidden="true"></div>
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+
+        <div class="hero__body container">
+          <div class="hero__copy">
+            <div class="hero__text-group">
+              <p class="eyebrow">ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</p>
+              <h1 id="hero-title">ИГРАЙ.<br>ПОНИМАЙ.<br>ЧУВСТВУЙ.</h1>
+              <p class="hero__lead">Помогаю раскрыть твой музыкальный вкус и уверенность через игру на гитаре.</p>
+            </div>
+            <a class="cta" href="#lead-form" data-lead-source="Hero / Записаться на занятие"><span>ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</span><span class="cta__arrow" aria-hidden="true">→</span></a>
+            <p class="hero__meta hero__meta--mobile">ОФФЛАЙН / РОСТОВ-НА-ДОНУ<br>ОНЛАЙН / ЛЮБОЙ ГОРОД</p>
+          </div>
+        </div>
+        <div class="guitar-annotations" aria-hidden="true">
+          <svg class="annotation-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <g class="lines--desktop">
+              <path class="line--instrument" d="M90.5 78.2 L83.2 61.5" />
+              <path class="line--tuners" d="M71.8 21.2 L74.25 24.7" />
+              <path class="line--nut" d="M58.5 40.5 L57.75 50.8" />
+            </g>
+            <g class="lines--tablet">
+              <path d="M90 77 L82.5 58 M72 18 L80 24.5 M52 39 L59 51" />
+            </g>
+          </svg>
+          <svg class="string-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M91.7 60.3 L79.5 34.5" />
+            <path d="M91.7 61.8 L81 39.5" />
+            <path d="M91.7 63.3 L82.5 44.5" />
+            <path d="M91.7 64.8 L84 49.2" />
+            <path d="M91.7 66.3 L85.5 53.8" />
+            <path d="M91.7 67.8 L87 58.2" />
+          </svg>
+
+          <div class="annotation annotation--instrument"><span><b>01</b><i>АКУСТИЧЕСКАЯ<br>ГИТАРА</i></span></div>
+          <div class="annotation annotation--tuners"><b>02</b><i>КОЛКИ</i></div>
+          <div class="annotation annotation--nut"><b>03</b><i>ВЕРХНИЙ<br>ПОРОЖЕК</i></div>
+
+          <ol class="string-annotations">
+            <li><span>06</span><strong>МИ</strong></li>
+            <li><span>05</span><strong>ЛЯ</strong></li>
+            <li><span>04</span><strong>РЕ</strong></li>
+            <li><span>03</span><strong>СОЛЬ</strong></li>
+            <li><span>02</span><strong>СИ</strong></li>
+            <li><span>01</span><strong>МИ</strong></li>
+          </ol>
+        </div>
+        <a class="scroll-indicator" href="#method"><span>ЛИСТАЙТЕ ДАЛЬШЕ</span><span class="scroll-indicator__arrow" aria-hidden="true">↓</span></a>
+        <p class="hero__meta hero__meta--desktop">ОФФЛАЙН / РОСТОВ-НА-ДОНУ<br>ОНЛАЙН / ЛЮБОЙ ГОРОД</p>
+      </section>
+
+      <section class="method" id="method" data-nav-theme="light" aria-labelledby="method-title">
+        <div class="method__inner container">
+          <div class="method__eyebrow"><span>02 / МЕТОДИКА</span><span class="method__eyebrow-line" aria-hidden="true"></span></div>
+
+          <div class="method__intro">
+            <h2 id="method-title">5 УРОВНЕЙ.<br>ОТ ПЕРВОЙ МЕЛОДИИ<br>ДО СВОЕГО ЗВУКА.</h2>
+            <div class="method__summary">
+              <p>Обучение строится последовательно: от первых звуков и базовой техники — к уверенной игре и музыке, которую действительно хочется исполнять.</p>
+              <span>≈ 10 ЗАНЯТИЙ / УРОВЕНЬ</span>
+            </div>
+          </div>
+
+          <ol class="method__levels">
+            <li class="method-level">
+              <span class="method-level__number">01</span>
+              <span class="method-level__track" aria-hidden="true"><i></i></span>
+              <h3>ПЕРВЫЙ ЗВУК</h3>
+              <p>Знакомство с инструментом, постановка рук и первые аккорды.</p>
+              <small>ПЕРВАЯ МЕЛОДИЯ — УЖЕ НА ПЕРВОМ УРОКЕ</small>
+            </li>
+            <li class="method-level">
+              <span class="method-level__number">02</span>
+              <span class="method-level__track" aria-hidden="true"><i></i></span>
+              <h3>ОСНОВА</h3>
+              <p>Ритм, бой, переборы и уверенная смена аккордов.</p>
+            </li>
+            <li class="method-level">
+              <span class="method-level__number">03</span>
+              <span class="method-level__track" aria-hidden="true"><i></i></span>
+              <h3>МУЗЫКА</h3>
+              <p>Работа с композициями, развитие слуха и понимание инструмента.</p>
+            </li>
+            <li class="method-level">
+              <span class="method-level__number">04</span>
+              <span class="method-level__track" aria-hidden="true"><i></i></span>
+              <h3>СВОЙ СТИЛЬ</h3>
+              <p>После освоения базы — музыка по предпочтениям ученика.</p>
+              <small>КЛАССИКА / БЛЮЗ / РОК / МЕТАЛ</small>
+            </li>
+            <li class="method-level">
+              <span class="method-level__number">05</span>
+              <span class="method-level__track" aria-hidden="true"><i></i></span>
+              <h3>СВОБОДА</h3>
+              <p>Уверенная самостоятельная игра, собственный репертуар и дальнейшее развитие.</p>
+            </li>
+          </ol>
+
+          <div class="method__closing">
+            <p>НЕ ПРОСТО АККОРДЫ —<br><em>ПОНИМАНИЕ ИНСТРУМЕНТА.</em></p>
+            <a class="method__next" href="#lessons"><i aria-hidden="true"></i>КАК ПРОХОДЯТ ЗАНЯТИЯ <b aria-hidden="true">↓</b></a>
+          </div>
+        </div>
+        <div class="method__pick pick-flip" aria-hidden="true">
+          <div class="pick-flip__inner">
+            <div class="pick-flip__face pick-flip__front"><img src="images/events/paper-sky-pick.png" alt=""></div>
+            <div class="pick-flip__face pick-flip__back"><img src="images/events/atom-steam-pick.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lessons" id="lessons" data-nav-theme="dark" aria-labelledby="lessons-title" data-reveal>
+        <div class="lessons__inner container">
+          <figure class="lessons__media">
+            <img src="images/teacher-guitar.png" alt="Преподаватель играет на гитаре" loading="lazy">
+          </figure>
+
+          <div class="lessons__content">
+            <p class="lessons__eyebrow">03 / КАК ПРОХОДЯТ ЗАНЯТИЯ</p>
+            <h2 id="lessons-title">УРОК,<br>СОБРАННЫЙ<br>ПОД ТЕБЯ.</h2>
+            <p class="lessons__lead">Занятия проходят индивидуально — без общей программы для всех.<br>Темп, материал и сложность подстраиваются под ученика.</p>
+            <p class="lessons__detail">ДЕТИ ОТ 8 ЛЕТ / ВЗРОСЛЫЕ</p>
+
+            <ol class="lessons__principles">
+              <li>
+                <span class="lessons__number">01</span>
+                <h3>ИНДИВИДУАЛЬНО</h3>
+                <p>Программа и темп обучения подстраиваются под ученика.</p>
+              </li>
+              <li>
+                <span class="lessons__number">02</span>
+                <h3>ВСЁ ВКЛЮЧЕНО</h3>
+                <p>Материалы, <span class="lessons__text-accent">Guitar Pro</span> и возможность использования музыкального оборудования преподавателя: гитары — классика / акустика / электро; гитарные процессоры; звуковая карта.</p>
+              </li>
+              <li>
+                <span class="lessons__number">03</span>
+                <h3>ЛЮБОЙ ЖАНР</h3>
+                <p>После базы — классика, блюз, рок, метал или музыка, которую хочется играть самому.</p>
+              </li>
+              <li>
+                <span class="lessons__number">04</span>
+                <h3>ПРОСТО О СЛОЖНОМ</h3>
+                <p>Минимум сухой теории. Больше практики, понятных объяснений и немного юмора.</p>
+              </li>
+              <li class="lessons__principle--accent">
+                <span class="lessons__number">05</span>
+                <h3>СРАЗУ К МУЗЫКЕ</h3>
+                <p>Первая мелодия — уже на первом уроке.</p>
+              </li>
+            </ol>
+
+            <a class="lessons__next" href="#pricing"><i aria-hidden="true"></i><span>ВЫБРАТЬ ФОРМАТ</span><b aria-hidden="true">↓</b></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing" data-nav-theme="light" aria-labelledby="pricing-title" data-reveal>
+        <div class="pricing__inner container">
+          <div class="pricing__eyebrow"><span>04 / ФОРМАТЫ И СТОИМОСТЬ</span><i aria-hidden="true"></i></div>
+
+          <div class="pricing__intro">
+            <h2 id="pricing-title">ВЫБЕРИ<br>СВОЙ ФОРМАТ.</h2>
+            <div class="pricing__summary">
+              <p>Занятия проходят индивидуально.<br>Формат и график подбираются под ученика.</p>
+              <span>РОСТОВ-НА-ДОНУ / ОНЛАЙН</span>
+            </div>
+          </div>
+
+          <ol class="pricing__formats">
+            <li class="pricing-format pricing-format--primary">
+              <div class="pricing-format__heading"><span class="pricing-format__number">01</span><h3>ДЛЯ НАЧИНАЮЩИХ</h3></div>
+              <p class="pricing-format__price">850 ₽</p>
+              <p class="pricing-format__unit">55 МИНУТ</p>
+              <p class="pricing-format__description">База, постановка рук, аккорды, ритм и первые композиции.</p>
+              <small>ПЕРВАЯ МЕЛОДИЯ — УЖЕ НА ПЕРВОМ УРОКЕ</small>
+            </li>
+            <li class="pricing-format">
+              <div class="pricing-format__heading"><span class="pricing-format__number">02</span><h3>ДЛЯ ПРОДВИНУТЫХ</h3></div>
+              <p class="pricing-format__price">1 100 ₽</p>
+              <p class="pricing-format__unit">55 МИНУТ</p>
+              <p class="pricing-format__description">Для тех, кто уже играет и хочет разобрать сложный материал, улучшить технику и двигаться дальше.</p>
+              <small>ОНЛАЙН-ПРОВЕРКА ДЗ · ИНДИВИДУАЛЬНЫЕ ПАРТИТУРЫ · НОТНАЯ ГРАМОТА — ПО ЖЕЛАНИЮ</small>
+            </li>
+            <li class="pricing-format pricing-format--secondary">
+              <div class="pricing-format__heading"><span class="pricing-format__number">03</span><h3>С ВЫЕЗДОМ</h3></div>
+              <div class="pricing-format__prices">
+                <div class="pricing-format__tariff">
+                  <p class="pricing-format__price">1 200 ₽</p>
+                  <p class="pricing-format__unit">ДЛЯ НАЧИНАЮЩИХ</p>
+                </div>
+                <span class="pricing-format__separator" aria-hidden="true">/</span>
+                <div class="pricing-format__tariff">
+                  <p class="pricing-format__price">1 550 ₽</p>
+                  <p class="pricing-format__unit">ДЛЯ ПРОДВИНУТЫХ</p>
+                </div>
+              </div>
+              <p class="pricing-format__unit pricing-format__duration">55 МИНУТ</p>
+              <p class="pricing-format__unit pricing-format__location">СОВЕТСКИЙ РАЙОН / РОСТОВ-НА-ДОНУ</p>
+              <p class="pricing-format__description">Индивидуальное занятие с выездом к ученику.</p>
+            </li>
+            <li class="pricing-format pricing-format--trial">
+              <div class="pricing-format__heading"><span class="pricing-format__number">04</span><h3>ПРОБНЫЙ УРОК</h3></div>
+              <p class="pricing-format__price">500 ₽</p>
+              <p class="pricing-format__unit">55 МИНУТ</p>
+              <p class="pricing-format__description">Познакомимся, определим уровень и наметим первые шаги в обучении.</p>
+              <span class="pricing-format__accent">НАЧАТЬ С ПРОБНОГО <b aria-hidden="true">→</b></span>
+            </li>
+          </ol>
+
+          <div class="pricing__action">
+            <a class="pricing__cta" href="#lead-form" data-lead-source="Pricing / Пробный урок"><span>ЗАПИСАТЬСЯ НА ПРОБНЫЙ УРОК</span><b aria-hidden="true">→</b></a>
+            <p>График занятий обсуждается индивидуально.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" data-nav-theme="dark" aria-labelledby="about-title" data-reveal>
+        <div class="about__inner container">
+          <div class="about__eyebrow"><span>05 / ОБО МНЕ</span><i aria-hidden="true"></i></div>
+
+          <div class="about__portrait-layout">
+            <figure class="about__portrait">
+              <img src="images/about-guitarist.jpg" alt="Преподаватель играет на электрогитаре в репетиционном пространстве" loading="lazy">
+            </figure>
+
+            <h2 class="about__heading" id="about-title">ИГРАЮ.<br>ВЫСТУПАЮ.<br>ПРЕПОДАЮ.</h2>
+
+            <div class="about__bio">
+              <p>Гитара со мной с 11 лет, с 16 — сцена.<br>Последние 3 года преподаю детям и взрослым.</p>
+              <p>Меньше сухой теории. Больше практики, музыки и понимания того, что ты играешь.</p>
+            </div>
+
+            <div class="about__listen">
+              <p class="about__listen-label">ПОСЛУШАТЬ</p>
+              <div class="about__listen-links">
+                <a href="https://music.yandex.ru/artist/23606818" target="_blank" rel="noopener noreferrer" aria-label="Слушать авторскую музыку Denny Marron">
+                  <span class="about__play" aria-hidden="true"><i></i></span>
+                  <span class="about__listen-copy"><strong>МОЯ МУЗЫКА</strong><small>АВТОРСКИЕ КОМПОЗИЦИИ</small></span>
+                </a>
+                <a href="https://yourtunes.net/r/naugad-321885" target="_blank" rel="noopener noreferrer" aria-label="Слушать группу Бумажное небо">
+                  <span class="about__play" aria-hidden="true"><i></i></span>
+                  <span class="about__listen-copy"><strong>БУМАЖНОЕ НЕБО</strong><small>МОЯ ГРУППА</small></span>
+                </a>
+              </div>
+            </div>
+
+            <dl class="about__compact-facts">
+              <div><dt>11</dt><dd>ЛЕТ — НАЧАЛ ИГРАТЬ</dd></div>
+              <div><dt>16</dt><dd>ЛЕТ — НАЧАЛ ВЫСТУПАТЬ</dd></div>
+              <div><dt>3</dt><dd>ГОДА — ПРЕПОДАЮ</dd></div>
+            </dl>
+
+            <div class="about__credentials">
+              <p class="about__credentials-label">ОБРАЗОВАНИЕ / 2025</p>
+              <h3>АНО ДПО<br>«Уральский институт повышения квалификации и переподготовки»</h3>
+              <p>Преподавание музыкальных дисциплин в организациях дополнительного и общего образования с учетом требований ФГТ и ФГОС.</p>
+            </div>
+
+            <a class="about__next" href="#atmosphere"><i aria-hidden="true"></i><span>АТМОСФЕРА ЗАНЯТИЙ</span><b aria-hidden="true">↓</b></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="atmosphere" id="atmosphere" data-nav-theme="light" aria-labelledby="atmosphere-title" data-reveal>
+        <div class="atmosphere__inner container">
+          <div class="atmosphere__eyebrow"><span>06 / АТМОСФЕРА ЗАНЯТИЙ</span><i aria-hidden="true"></i></div>
+
+          <div class="atmosphere__layout">
+            <h2 id="atmosphere-title">АТМОСФЕРА<br>ЗАНЯТИЙ.</h2>
+            <p class="atmosphere__lead">Без лишней теории и серьёзных лиц.</p>
+
+            <ol class="atmosphere__details">
+              <li><span>01</span><div><h3>БЕЗ ЗАУМНОЙ ТЕОРИИ</h3><p>Объясняю просто и по делу.</p></div></li>
+              <li><span>02</span><div><h3>БОЛЬШЕ ПРАКТИКИ</h3><p>Играем больше, чем говорим о музыке.</p></div></li>
+              <li><span>03</span><div><h3>МОЖНО И НА СЦЕНУ</h3><p>Концертная деятельность и выступления — если захочется.</p></div></li>
+            </ol>
+
+            <div class="atmosphere__gallery" aria-label="Моменты занятий">
+              <figure class="atmosphere__photo atmosphere__photo--lesson">
+                <img src="images/lesson-student.png" alt="Индивидуальное занятие преподавателя с учеником" loading="lazy">
+              </figure>
+              <figure class="atmosphere__photo atmosphere__photo--group">
+                <img src="images/students-group.JPG" alt="Преподаватель и ученики после выступления" loading="lazy">
+              </figure>
+              <figure class="atmosphere__photo atmosphere__photo--portrait">
+                <img src="images/lesson-atmosphere.png" alt="Преподаватель играет на гитаре на фоне тёплых огней" loading="lazy">
+              </figure>
+            </div>
+
+            <a class="atmosphere__next" href="#gallery"><i aria-hidden="true"></i><span>КОНЦЕРТНАЯ ДЕЯТЕЛЬНОСТЬ И СЦЕНА</span><b aria-hidden="true">↓</b></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="events" id="gallery" data-nav-theme="dark" aria-labelledby="events-title" data-reveal>
+        <div class="events__inner container">
+          <div class="events__eyebrow"><span>07 / КОНЦЕРТНАЯ ДЕЯТЕЛЬНОСТЬ</span><i aria-hidden="true"></i></div>
+
+          <div class="events__intro">
+            <h2 id="events-title">ИНОГДА<br>ВЫХОДИМ<br>ИЗ КОМНАТЫ.</h2>
+            <div class="events__bands">
+              <p class="events__bands-label"><span>ИГРАЮ / ВЫСТУПАЮ</span><small>ПОЗНАКОМИТЬСЯ С ТВОРЧЕСТВОМ →</small></p>
+              <div class="events__bands-list">
+                <a class="events__band events__band--atom" href="https://atomsteam.ru/" target="_blank" rel="noopener noreferrer" aria-label="Сайт группы ATOM STEAM">
+                  <span class="events__band-logo">
+                    <span class="atom-logo">
+                      <img class="atom-logo__fallback" src="images/bands/band-01-logo.png" alt="Логотип группы Atom Steam">
+                      <span class="atom-logo__layers" aria-hidden="true">
+                        <img class="atom-logo__layer atom-logo__base" src="images/bands/atom-steam/base.png" alt="">
+                        <img class="atom-logo__layer atom-logo__gear" src="images/bands/atom-steam/gear.png" alt="">
+                        <span class="atom-logo__layer atom-logo__propeller"><img class="atom-logo__rotor" src="images/bands/atom-steam/propeller.png" alt=""></span>
+                        <img class="atom-logo__layer atom-logo__text" src="images/bands/atom-steam/text.png" alt="">
+                      </span>
+                    </span>
+                  </span>
+                  <span>ATOM STEAM</span>
+                </a>
+                <a class="events__band events__band--sky" href="https://vk.ru/papersky" target="_blank" rel="noopener noreferrer" aria-label="Страница группы Бумажное небо">
+                  <span class="events__band-logo"><img src="images/bands/band-02-logo.png" alt="Логотип группы «Бумажное небо»"></span>
+                  <span>БУМАЖНОЕ НЕБО</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="events__gallery" aria-label="Фотографии квартирников">
+            <button class="events__photo events__photo--01" type="button" data-index="0" data-src="images/events/event-01.jpg" aria-label="Открыть фотографию выступления преподавателя">
+              <img src="images/events/event-01.jpg" alt="Преподаватель играет на гитаре на сцене" loading="lazy">
+            </button>
+            <button class="events__photo events__photo--02" type="button" data-index="1" data-src="images/events/event-02.jpg" aria-label="Открыть фотографию совместного выступления">
+              <img src="images/events/event-02.jpg" alt="Гитарист и барабанщик выступают вместе" loading="lazy">
+            </button>
+            <button class="events__photo events__photo--03" type="button" data-index="2" data-src="images/events/event-03.JPG" aria-label="Открыть вертикальный сценический портрет">
+              <img src="images/events/event-03.JPG" alt="Преподаватель с электрогитарой на сцене" loading="lazy">
+            </button>
+            <button class="events__photo events__photo--04" type="button" data-index="3" data-src="images/events/event-04.jpg" aria-label="Открыть фотографию сценического выступления">
+              <img src="images/events/event-04.jpg" alt="Преподаватель выступает с электрогитарой" loading="lazy">
+            </button>
+            <button class="events__photo events__photo--05" type="button" data-index="4" data-src="images/events/event-05.PNG" aria-label="Открыть главное фото концерта">
+              <img src="images/events/event-05.PNG" alt="Гитарист и вокалист во время живого выступления" loading="lazy">
+            </button>
+            <button class="events__photo events__photo--06" type="button" data-index="5" data-src="images/events/event-06.jpg" aria-label="Открыть фотографию группы на сцене">
+              <img src="images/events/event-06.jpg" alt="Музыкальная группа выступает на сцене" loading="lazy">
+            </button>
+          </div>
+
+          <p class="events__caption">КОНЦЕРТНАЯ ДЕЯТЕЛЬНОСТЬ / ВСТРЕЧИ / МУЗЫКА</p>
+
+          <div class="events__closing">
+            <p>Следующий квартирник ещё впереди.</p>
+            <a class="events__cta" href="#lead-form" data-lead-source="Gallery / Хочу поучаствовать"><span>ХОЧУ ПОУЧАСТВОВАТЬ</span><b aria-hidden="true">→</b></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts" data-nav-theme="dark" aria-labelledby="contacts-title" data-reveal>
+        <div class="contacts__inner container">
+          <div class="contacts__eyebrow"><span>08 / КОНТАКТЫ</span><i aria-hidden="true"></i></div>
+
+          <div class="contacts__layout">
+            <div class="contacts__intro">
+              <h2 id="contacts-title">ДАВАЙТЕ<br>СЫГРАЕМ?</h2>
+              <p>Если хотите записаться на занятие<br>или задать вопрос — напишите мне.</p>
+            </div>
+
+            <address class="contacts__details">
+              <div class="contacts__phone">
+                <span>ТЕЛЕФОН / ДЛЯ СВЯЗИ</span>
+                <a href="tel:+79064182235">+7 906 418 22 35</a>
+              </div>
+
+              <div class="contacts__socials">
+                <p>НАПИШИТЕ МНЕ</p>
+                <div class="contacts__social-list">
+                  <a href="https://vk.ru/im/convo/148013271" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h3.2c.3 3.7 1.8 6.2 3.1 6.2.5 0 .6-.5.6-1.7V6.5h3v3.7c0 .9.1 1.2.5 1.2.7 0 2.1-1.9 2.8-4.9h3.2c-.6 3.1-3 5.4-3 5.4s2.8 2 3.5 5.6h-3.6c-.8-2.4-2.1-4.1-3-4.1-.5 0-.5.6-.5 1.5v2.6h-.9c-4.7 0-8.3-3.2-8.9-11Z"/></svg>
+                    <span>ВКОНТАКТЕ</span>
+                  </a>
+                  <a href="https://web.max.ru/215952486" target="_blank" rel="noopener noreferrer" aria-label="MAX">
+                    <img class="contacts__social-icon contacts__social-icon--max" src="images/icons/max.svg" alt="" aria-hidden="true">
+                    <span>MAX</span>
+                  </a>
+                  <a href="https://t.me/+79064182235" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.7 3.3 2.8 10.6c-1.3.5-1.3 1.3-.2 1.7l4.8 1.5 1.9 5.7c.2.6.1.9.8.9.5 0 .8-.2 1-.4l2.7-2.6 5.6 4.1c1 .6 1.7.3 2-.9l3.4-16c.4-1.4-.5-2-1.5-1.6Z"/></svg>
+                    <span>TELEGRAM</span>
+                  </a>
+                  <a class="contacts__social--instagram" href="https://www.instagram.com/denny.marron" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <span>INSTAGRAM</span>
+                  </a>
+                </div>
+              </div>
+            </address>
+          </div>
+
+          <footer class="contacts__footer">
+            <div class="contacts__footer-meta">
+              <span>© 2026 ИМЯ ФАМИЛИЯ</span>
+              <span>ПРЕПОДАВАТЕЛЬ ГИТАРЫ · РОСТОВ-НА-ДОНУ</span>
+            </div>
+            <nav class="contacts__legal" aria-label="Юридическая информация">
+              <a href="privacy.html">ПОЛИТИКА</a>
+              <a href="consent.html">ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
+            </nav>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" aria-label="Просмотр фотографий квартирников">
+      <button class="lightbox__close" type="button" aria-label="Закрыть">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Предыдущая фотография">←</button>
+      <div class="lightbox__content">
+        <img class="lightbox__image" alt="" hidden>
+        <span class="lightbox__placeholder" aria-live="polite"></span>
+      </div>
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Следующая фотография">→</button>
+      <p class="lightbox__counter" aria-live="polite"></p>
+    </dialog>
+
+    <dialog class="lead-modal" id="lead-form" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title" aria-describedby="lead-modal-description">
+      <div class="lead-modal__panel">
+        <button class="lead-modal__close" type="button" aria-label="Закрыть форму">×</button>
+
+        <form class="lead-form" novalidate>
+          <input type="hidden" name="source" value="">
+          <label class="lead-honeypot" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          <p class="lead-form__eyebrow">ЗАЯВКА / ЗАНЯТИЕ</p>
+          <h2 id="lead-modal-title">ОСТАВИТЬ<br>ЗАЯВКУ</h2>
+          <p class="lead-form__intro" id="lead-modal-description">Напишите немного о себе — я свяжусь с вами и подберём удобный формат.</p>
+
+          <div class="lead-form__fields">
+            <label class="lead-field">
+              <span>ИМЯ</span>
+              <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required aria-describedby="lead-name-error">
+              <small class="lead-field__error" id="lead-name-error" aria-live="polite"></small>
+            </label>
+
+            <label class="lead-field">
+              <span>КАК С ВАМИ СВЯЗАТЬСЯ</span>
+              <input type="text" name="contact" placeholder="Телефон или Telegram" autocomplete="tel" required aria-describedby="lead-contact-error">
+              <small class="lead-field__error" id="lead-contact-error" aria-live="polite"></small>
+            </label>
+
+            <label class="lead-field">
+              <span>КОММЕНТАРИЙ</span>
+              <textarea name="comment" rows="3" placeholder="Например: хочу начать с нуля, люблю рок, удобнее заниматься вечером."></textarea>
+            </label>
+          </div>
+
+          <div class="lead-consent">
+            <label class="lead-consent__label">
+              <input type="checkbox" name="personalDataConsent" value="true" required aria-describedby="lead-consent-error">
+              <span class="lead-consent__box" aria-hidden="true"></span>
+              <span class="lead-consent__text">Я даю <a href="consent.html" target="_blank" rel="noopener noreferrer">согласие на обработку персональных данных</a> и ознакомился(-ась) с <a href="privacy.html" target="_blank" rel="noopener noreferrer">Политикой обработки персональных данных</a>.</span>
+            </label>
+            <small class="lead-consent__error" id="lead-consent-error" aria-live="polite"></small>
+          </div>
+
+          <button class="lead-form__submit" type="submit"><span>ОТПРАВИТЬ ЗАЯВКУ</span><b aria-hidden="true">→</b></button>
+
+          <div class="lead-form__status" role="status" aria-live="polite" hidden>
+            <strong></strong>
+            <p></p>
+          </div>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>
