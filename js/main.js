@@ -246,6 +246,50 @@ if ('IntersectionObserver' in window) {
   revealSections.forEach((section) => section.classList.add('is-visible'))
 }
 
+const atmosphereGallery = document.querySelector('.atmosphere__gallery')
+
+if (atmosphereGallery) {
+  const atmospherePhotos = [...atmosphereGallery.querySelectorAll('.atmosphere__photo')]
+  const atmospherePrevious = atmosphereGallery.querySelector('.atmosphere__slider-nav--prev')
+  const atmosphereNext = atmosphereGallery.querySelector('.atmosphere__slider-nav--next')
+  const atmosphereCounter = atmosphereGallery.querySelector('.atmosphere__slider-counter')
+  const mobileSlider = window.matchMedia('(max-width: 620px)')
+  let activeAtmospherePhoto = 0
+  let atmosphereTouchX = 0
+  let atmosphereTouchY = 0
+
+  function renderAtmosphereSlider() {
+    atmospherePhotos.forEach((photo, index) => {
+      photo.classList.toggle('is-active', index === activeAtmospherePhoto)
+      if (mobileSlider.matches) photo.setAttribute('aria-hidden', String(index !== activeAtmospherePhoto))
+      else photo.removeAttribute('aria-hidden')
+    })
+    atmosphereCounter.textContent = `${String(activeAtmospherePhoto + 1).padStart(2, '0')} / ${String(atmospherePhotos.length).padStart(2, '0')}`
+  }
+
+  function changeAtmospherePhoto(direction) {
+    activeAtmospherePhoto = (activeAtmospherePhoto + direction + atmospherePhotos.length) % atmospherePhotos.length
+    renderAtmosphereSlider()
+  }
+
+  atmospherePrevious.addEventListener('click', () => changeAtmospherePhoto(-1))
+  atmosphereNext.addEventListener('click', () => changeAtmospherePhoto(1))
+  atmosphereGallery.addEventListener('touchstart', (event) => {
+    atmosphereTouchX = event.changedTouches[0].clientX
+    atmosphereTouchY = event.changedTouches[0].clientY
+  }, { passive:true })
+  atmosphereGallery.addEventListener('touchend', (event) => {
+    if (!mobileSlider.matches) return
+    const distanceX = event.changedTouches[0].clientX - atmosphereTouchX
+    const distanceY = event.changedTouches[0].clientY - atmosphereTouchY
+    if (Math.abs(distanceX) > 50 && Math.abs(distanceX) > Math.abs(distanceY) * 1.2) {
+      changeAtmospherePhoto(distanceX > 0 ? -1 : 1)
+    }
+  }, { passive:true })
+  mobileSlider.addEventListener('change', renderAtmosphereSlider)
+  renderAtmosphereSlider()
+}
+
 const eventPhotos = [...document.querySelectorAll('.events__photo')]
 const lightbox = document.querySelector('.lightbox')
 

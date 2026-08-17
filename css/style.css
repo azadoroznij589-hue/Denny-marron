@@ -205,7 +205,7 @@ h1 { margin:0; color:var(--color-ivory); font-family:'Cormorant Garamond',serif;
   .method__next { gap:14px; margin-top:36px; font-size:9px; letter-spacing:.16em; }
   .method__next i { width:48px; }
   .method__next:hover i,.method__next:focus-visible i { width:70px; }
-  .method__pick { position:absolute; right:22px; bottom:84px; width:clamp(120px,38vw,150px); margin:0; opacity:.6; transform:rotate(10deg); }
+  .method__pick { position:absolute; right:22px; bottom:24px; width:clamp(120px,38vw,150px); margin:0; opacity:.6; transform:rotate(10deg); }
 }
 
 /* 03 / КАК ПРОХОДЯТ ЗАНЯТИЯ */
@@ -711,6 +711,7 @@ h1 { margin:0; color:var(--color-ivory); font-family:'Cormorant Garamond',serif;
 .atmosphere__photo--lesson img { object-position:54% 62%; }
 .atmosphere__photo--group img { object-position:50% 48%; }
 .atmosphere__photo--portrait img { object-position:50% 45%; }
+.atmosphere__slider-nav,.atmosphere__slider-counter { display:none; }
 .atmosphere__next { align-self:end; margin-top:clamp(20px,2.4vw,30px); }
 
 .js .atmosphere[data-reveal] .atmosphere__gallery { opacity:0; transform:translateY(16px); }
@@ -741,8 +742,21 @@ h1 { margin:0; color:var(--color-ivory); font-family:'Cormorant Garamond',serif;
   .atmosphere__next { margin-top:46px; }
 }
 
+@media (max-width:620px) {
+  .atmosphere__gallery { position:relative; display:block; width:100%; height:auto; aspect-ratio:4/3; overflow:hidden; touch-action:pan-y; }
+  .atmosphere__photo,.atmosphere__photo--lesson,.atmosphere__photo--group,.atmosphere__photo--portrait { position:absolute; inset:0; width:100%; height:100%; opacity:0; pointer-events:none; transition:opacity 260ms ease; }
+  .atmosphere__photo.is-active { z-index:1; opacity:1; pointer-events:auto; }
+  .atmosphere__photo--lesson img { object-position:54% 58%; }
+  .js .atmosphere__slider-nav { position:absolute; z-index:2; top:50%; display:grid; width:48px; height:56px; padding:0; place-items:center; border:0; color:var(--color-ivory); background:rgba(11,9,12,.2); cursor:pointer; transform:translateY(-50%); }
+  .atmosphere__slider-nav--prev { left:0; }
+  .atmosphere__slider-nav--next { right:0; }
+  .atmosphere__slider-nav svg { width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.25; stroke-linecap:round; stroke-linejoin:round; }
+  .js .atmosphere__slider-counter { position:absolute; z-index:2; right:14px; bottom:12px; display:block; margin:0; color:rgba(212,202,188,.78); font-family:'Manrope',sans-serif; font-size:9px; font-weight:400; letter-spacing:.16em; }
+}
+
 @media (prefers-reduced-motion:reduce) {
   .js .atmosphere[data-reveal] .atmosphere__gallery,.js .atmosphere[data-reveal] .atmosphere__details li { opacity:1; transform:none; transition:none; }
+  .atmosphere__photo { transition:none; }
 }
 
 /* 07 / КВАРТИРНИКИ */
