@@ -253,12 +253,14 @@ if (atmosphereGallery) {
   const atmospherePrevious = atmosphereGallery.querySelector('.atmosphere__slider-nav--prev')
   const atmosphereNext = atmosphereGallery.querySelector('.atmosphere__slider-nav--next')
   const atmosphereCounter = atmosphereGallery.querySelector('.atmosphere__slider-counter')
+  const atmosphereControls = [atmospherePrevious, atmosphereNext, atmosphereCounter]
   const mobileSlider = window.matchMedia('(max-width: 620px)')
   let activeAtmospherePhoto = 0
   let atmosphereTouchX = 0
   let atmosphereTouchY = 0
 
   function renderAtmosphereSlider() {
+    atmosphereControls.forEach((control) => { control.hidden = !mobileSlider.matches })
     atmospherePhotos.forEach((photo, index) => {
       photo.classList.toggle('is-active', index === activeAtmospherePhoto)
       if (mobileSlider.matches) photo.setAttribute('aria-hidden', String(index !== activeAtmospherePhoto))
